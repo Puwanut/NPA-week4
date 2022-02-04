@@ -1,0 +1,17 @@
+[
+    {
+        "name": "R1",
+        "ip_management": "172.31.106.4",
+        "ip_loopback": "1.1.1.1"
+    },
+    {
+        "name": "R2",
+        "ip_management": "172.31.106.5",
+        "ip_loopback": "2.2.2.2"
+    },
+    {
+        "name": "R3",
+        "ip_management": "172.31.106.6",
+        "ip_loopback": "3.3.3.3"
+    }
+]
