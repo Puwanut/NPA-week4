@@ -36,4 +36,6 @@ for device in devices:
     for _ in range(3):
         child.sendline('exit')
         child.expect(PROMPT)
+    
+    
 
