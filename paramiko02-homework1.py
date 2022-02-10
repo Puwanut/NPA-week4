@@ -39,7 +39,7 @@ for device in devices:
             ssh.send("default-information originate\n")
             ssh.send("exit\n")
             time.sleep(1)
-            for ip_access_list in device["access-lists-1"]:
+            for ip_access_list in device["access_lists_1"]:
                 ssh.send("access-list 1 " + ip_access_list + "\n")
             time.sleep(1)
             ssh.send("int g0/1\n")
@@ -51,7 +51,7 @@ for device in devices:
             time.sleep(1)
         
         #Access-class for telnet/ssh from Management plane and VPN Network
-        for ip_access_list in device["access-lists-2"]:
+        for ip_access_list in device["access_lists_2"]:
             ssh.send("access-list 2 " + ip_access_list + "\n")
         ssh.send("line vty 0 4\n")
         ssh.send("access-class 2 in\n")
